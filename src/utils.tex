@@ -73,7 +73,7 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{12pt}
+	\vspace{8pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
 		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
@@ -98,10 +98,10 @@
 	\begin{tikzpicture}[scale=1,rounded corners=4pt,very thin]
 		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.3);
 		\fill [maincol] (0,0) rectangle (#3\mpwidth, 0.3);
-  	\end{tikzpicture}\\[2pt]
+  	\end{tikzpicture}\\[0pt]
   	
   	\hspace{4pt}
-  	\vspace{12pt}
+  	\vspace{8pt}
   	\parbox{0.9\mpwidth}{#4}
 }
 
@@ -129,5 +129,5 @@
 			& \parbox{0.75\mpwidth}{#4} \\
 		\end{tabular*}\\[8pt]
 	}
-	\vspace{10pt}
+	\vspace{8pt}
 }
