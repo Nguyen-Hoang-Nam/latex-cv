@@ -5,7 +5,7 @@ This is my CV writes in Latex base on [jankapunkt/latexcv](https://github.com/ja
 I made it simple as much as possible. Therefore,
 you can change text in `src/variables.tex` to make it fit your profile.
 
-![my CV](https://raw.githubusercontent.com/Nguyen-Hoang-Nam/readme-image/main/latex-cv/latex-cv.jpg)
+![my CV](https://raw.githubusercontent.com/Nguyen-Hoang-Nam/readme-image/main/latex-cv/CV.jpg)
 
 ## Contributing
 
