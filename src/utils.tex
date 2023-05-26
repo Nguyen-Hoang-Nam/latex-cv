@@ -73,9 +73,9 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{6pt}
+	\vspace{4pt}
 	\cvtext{
-		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
+		\textbf{\Large{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
 		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
 	}
 }
@@ -87,22 +87,17 @@
 % Renders a progress-bar to indicate a certain skill in percent.
 % param 1: name of the skill / tech / etc.
 % param 2: level (for example in years)
-% param 3: percent, values range from 0 to 1
-% param 4: description of skill
-\newcommand{\cvskill}[4] {
+% param 3: description of skill
+\newcommand{\cvskill}[3] {
 	\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
- 		\textcolor{black}{\textbf{#1}} & \textcolor{maincol}{#2}\\
+ 		\textcolor{black}{\large{\textbf{#1}}} & \textcolor{maincol}{#2}\\[4pt]
 	\end{tabular*}
-	
-	\hspace{4pt}
-	\begin{tikzpicture}[scale=1,rounded corners=4pt,very thin]
-		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.3);
-		\fill [maincol] (0,0) rectangle (#3\mpwidth, 0.3);
-  	\end{tikzpicture}\\[0pt]
   	
   	\hspace{4pt}
   	\vspace{8pt}
-  	\parbox{0.9\mpwidth}{#4}
+  	\parbox{0.9\mpwidth}{#3}\\[2pt]
+  	
+  	\vspace{8pt}
 }
 
 
@@ -126,7 +121,7 @@
 		\begin{tabular*}{1\mpwidth}{p{0.20\mpwidth}  l}
 	 		{#1} & \large{\textbf{#2}} \\[2pt]
 			& \textbf{#3} \\
-			& \parbox{0.75\mpwidth}{#4} \\
+			& \parbox{0.75\mpwidth}{\small{#4}} \\
 		\end{tabular*}\\[6pt]
 	}
 	\vspace{8pt}
